@@ -7,6 +7,28 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Instalasi
+
+1. Silahkan download project ini atau bisa melakukan clone dengan menggunakan command <code>git clone https://github.com/mumtazdedi/website-blog.git</code>
+2. Letakkan di directory project anda, kemudian silahkan ekstrak file zip jika anda mendownloadnya
+3. Silahkan install composer di perangkat anda. Jika download installernya disini <a href="https://getcomposer.org/download/">Composer</a>
+4. Pastikan composer telah terinstall dengan membuka command prompt atau terminal anda lalu jalankan perintah <code>composer -V</code>
+5. arahkan terminal atau command prompt anda ke dalam direktori proyek ini, yaitu di dalam folder blog-web
+6. jalankan perintah <code>composer update</code> (perlu koneksi internet).
+7. Jalankan perintah php artisan, untuk menguji apakah perintah artisan Laravel bekerja.
+8. Buat database baru (kosong) pada mysql (via phpmyadmin) dengan nama crud.
+9. Jalankan perintah <code>cp .env.example .env</code>
+10. Jalankan perintah <code>php artisan key:generate.</code>
+11. Setting koneksi database di file .env (DB_DATABASE, DB_USERNAME, DB_PASSWORD).
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=blog
+    DB_USERNAME=root
+    DB_PASSWORD=
+12. Jalankan perintah <code>php artisan migrate.</code> Cek di phpmyadmin, seharusnya tabel sudah muncul.
+13. Setelah selesai, Jalankan perintah <code>php artisan</code> serve maka dapat diakses dengan http://localhost:8000/
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
