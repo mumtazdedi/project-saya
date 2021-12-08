@@ -19,13 +19,13 @@
 8. Buat database baru (kosong) pada mysql (via phpmyadmin) dengan nama crud.
 9. Jalankan perintah <code>cp .env.example .env</code>
 10. Jalankan perintah <code>php artisan key:generate.</code>
-11. Setting koneksi database di file .env (DB_DATABASE, DB_USERNAME, DB_PASSWORD).
-    DB_CONNECTION=mysql
-    DB_HOST=127.0.0.1
-    DB_PORT=3306
-    DB_DATABASE=blog
-    DB_USERNAME=root
-    DB_PASSWORD=
+11. Setting koneksi database di file .env (DB_DATABASE, DB_USERNAME, DB_PASSWORD).<br>
+    DB_CONNECTION=mysql<br>
+    DB_HOST=127.0.0.1<br>
+    DB_PORT=3306<br>
+    DB_DATABASE=blog<br>
+    DB_USERNAME=root<br>
+    DB_PASSWORD=<br>
 12. Jalankan perintah <code>php artisan migrate.</code> Cek di phpmyadmin, seharusnya tabel sudah muncul.
 13. Setelah selesai, Jalankan perintah <code>php artisan</code> serve maka dapat diakses dengan http://localhost:8000/
 
